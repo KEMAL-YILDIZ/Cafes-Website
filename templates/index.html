@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">☕️ Coffee & Wifi 💻</h1>
+        <p class="lead">Store nearby cafes details so you don't need to look'em up everytime</p>
+          <hr class="my-4">
+        <p>Checkout cafes with data on power socket availability, wifi speed and coffee quality.</p>
+        <a class="btn btn-warning btn-lg" href="{{ url_for('cafes') }}" role="button">View Cafes</a>
+    </div>
+</div>
+
+{% endblock %}
